@@ -22,3 +22,7 @@ Steps to run this local website:<br>
 2. search in the url of any browser localhost/phpmyadmin<br>
 3. Download the SQL file above<br>
 4. import it to the domain<br>
+
+in case of an error<br>
+go to the file mysqli_connect.php and change this part "$dbcon = @mysqli_connect('localhost', 'root', '', 'members_arias')" change the empty space on the right side of root to 1234
+ 
