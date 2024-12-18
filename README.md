@@ -20,7 +20,7 @@ Steps to run this local website:<br>
 -Setup SQL Database<br>
 1. Make sure xampp is running<br>
 2. search in the url of any browser localhost/phpmyadmin<br>
-3. Download the SQL file above<br>
+3. Download the members_arias.sql file above<br>
 4. import it to the domain<br>
 
 in case of an error<br>
