@@ -1,0 +1,1702 @@
+/*general*/
+/*general*/
+/*general*/
+/* Style for the Go Login button */
+.b-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  /* Hover effect */
+  .b-btn:hover {
+    background-color: #45a049; /* Darker green */
+    transform: translateY(-3px); /* Slightly raise the button */
+  }
+  
+  /* Active effect */
+  .b-btn:active {
+    background-color: #3e8e41; /* Even darker green */
+    transform: translateY(0); /* Reset position */
+  }
+  
+  
+
+/*admin-nav*/
+/*admin-nav*/
+/*admin-nav*/
+    /* Reset the list styles */
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center; /* Centers the nav horizontally */
+        align-items: center; /* Centers the nav vertically */
+        background-color: #1a1a1a; /* Dark background */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        border-radius: 8px; /* Rounded corners */
+      }
+  
+      /* Style each list item */
+      li {
+        padding: 0;
+      }
+  
+      /* Style the links */
+      li a {
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        font-size: 1rem;
+        font-family: 'Arial', sans-serif;
+        transition: all 0.3s ease; /* Smooth transition for hover effect */
+        border-radius: 6px;
+      }
+  
+      /* Hover effect: Brighten and add subtle glow */
+      li a:hover {
+        background-color: #00b0ff; /* Accent color */
+        color: #fff; /* White text */
+        box-shadow: 0 0 8px rgba(241, 123, 98, 0.8); /* Glowing effect */
+        transform: scale(1.05); /* Slight grow effect */
+      }
+  
+      /* Active link styling (optional) */
+      li a:active {
+        background-color: #f2f2f2; /* Slightly darker when active */
+        box-shadow: 0 0 8px rgba(211, 84, 0, 0.8);
+      }
+  
+      /* Mobile responsiveness - change to vertical layout when screen width is 600px or less */
+      @media screen and (max-width: 600px) {
+        ul {
+          flex-direction: column; /* Stack items vertically */
+          margin-top: 20px;
+        }
+  
+        li a {
+          padding: 12px 16px; /* Adjust padding for smaller screens */
+        }
+      }
+/*admin-page*/
+/*admin-page*/
+/*admin-page*/
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #121212; /* Dark background */
+    color: #f2f2f2;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Container */
+#container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header and Navigation */
+header, #nav {
+    background-color: #0d0d0d;
+    padding: 10px;
+    color: #00b0ff; /* Light blue */
+    text-align: center;
+    border-bottom: 3px solid #00b0ff;
+}
+
+/* Content Section */
+#content {
+    background-color: #1a1a1a; /* Darker background for the content */
+    padding: 40px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+#content h2 {
+    color: #00b0ff; /* Blue text for header */
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+/* Text Container */
+.admin-cn p {
+    color: #b3b3b3; /* Lighter grey text */
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px #00b0ff, 0 0 10px #00b0ff, 0 0 15px #00b0ff;
+}
+
+/* Glowing Effect on Text */
+.admin-cn p strong {
+    color: #fff;
+    font-size: 1.2rem;
+    text-shadow: 0 0 5px #00b0ff, 0 0 10px #00b0ff;
+}
+
+/* Footer Styles */
+#footer {
+    background-color: #1f1f1f;
+    padding: 30px;
+    text-align: center;
+    color: #b2b2b2;
+    font-size: 1rem;
+    border-top: 2px solid #00b0ff;
+}
+
+#footer a {
+    color: #00b0ff;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #00b0ff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    #content {
+        padding: 20px;
+    }
+
+    #content h2 {
+        font-size: 1.5rem;
+    }
+
+    .text-container p {
+        font-size: 1rem;
+    }
+}
+/*changeAD*/
+/*changeAD*/
+/*changeAD*/
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a1a; /* Dark background for the page */
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+
+        .label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            border-radius: 6px;
+            border: 1px solid #555;
+            background-color: #333;
+            color: #fff;
+            transition: all 0.3s ease;
+        }
+
+        input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+            border-color: #2e86c1; /* Accent color for focused inputs */
+            outline: none;
+            background-color: #444;
+        }
+
+        input[type="submit"] {
+            background-color: #2e86c1; /* Accent color for submit button */
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #f9e79f; /* Hover color for submit button */
+        }
+
+        .error {
+            color: #e74c3c;
+        }
+
+        .text-container {
+            background-color: #2c3e50; /* Dark background for content */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Mobile responsiveness */
+        @media screen and (max-width: 600px) {
+            #container {
+                width: 100%;
+                padding: 10px;
+            }
+
+            input[type="submit"] {
+                width: 100%;
+            }
+        }
+
+/*changeMEM*/
+/*changeMEM*/
+/*changeMEM*/
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a1a; /* Dark background for the page */
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+
+        .label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            border-radius: 6px;
+            border: 1px solid #555;
+            background-color: #333;
+            color: #fff;
+            transition: all 0.3s ease;
+        }
+
+        input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+            border-color: #2e86c1; /* Accent color for focused inputs */
+            outline: none;
+            background-color: #444;
+        }
+
+        input[type="submit"] {
+            background-color: #2e86c1; /* Accent color for submit button */
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #f9e79f; /* Hover color for submit button */
+        }
+
+        .error {
+            color: #e74c3c;
+        }
+
+        .text-container {
+            background-color: #2c3e50; /* Dark background for content */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Mobile responsiveness */
+        @media screen and (max-width: 600px) {
+            #container {
+                width: 100%;
+                padding: 10px;
+            }
+
+            input[type="submit"] {
+                width: 100%;
+            }
+        }
+
+/*delete-user*/
+/*delete-user*/
+/*delete-user*/
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #121212; /* Dark background */
+    color: #f2f2f2;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Container */
+#container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header and Navigation */
+header, #nav {
+    background-color: #0d0d0d;
+    padding: 10px;
+    color: #00b0ff; /* Light blue */
+    text-align: center;
+    border-bottom: 3px solid #00b0ff;
+}
+
+/* Main Delete Section */
+#delete {
+    background-color: #1a1a1a; /* Darker background for the delete section */
+    padding: 40px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+/* Make the header stand out more with a neon red warning color */
+#delete h2 {
+    color: #ff3333; /* Neon red for warning */
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 5px #ff3333, 0 0 10px #ff3333, 0 0 20px #ff3333;
+}
+
+/* Form */
+form {
+    margin-top: 20px;
+}
+
+/* Neon Glowing Buttons for Yes and No */
+input[type="submit"] {
+    background-color: transparent;
+    color: #fff;
+    padding: 12px 30px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+/* Glowing Green for Yes button */
+input[type="submit"][value="Yes"] {
+    background-color: #00ff00; /* Neon Green */
+    border-color: #00ff00;
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00;
+}
+
+input[type="submit"][value="Yes"]:hover {
+    background-color: #33cc33;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #00ff00, 0 0 25px #00ff00;
+}
+
+input[type="submit"][value="Yes"]:active {
+    background-color: #009900;
+}
+
+input[type="submit"][value="Yes"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px #00ff00;
+}
+
+/* Glowing Red for No button */
+input[type="submit"][value="No"] {
+    background-color: #ff3300; /* Neon Red */
+    border-color: #ff3300;
+    text-shadow: 0 0 5px #ff3300, 0 0 10px #ff3300, 0 0 20px #ff3300;
+}
+
+input[type="submit"][value="No"]:hover {
+    background-color: #ff6666;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ff3300, 0 0 25px #ff3300;
+}
+
+input[type="submit"][value="No"]:active {
+    background-color: #cc0000;
+}
+
+input[type="submit"][value="No"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px #ff3300;
+}
+
+/* Glowing Effect on Text */
+#delete p, #delete strong {
+    color: #b3b3b3; /* Lighter grey text */
+    text-shadow: 0 0 5px #00b0ff, 0 0 10px #00b0ff, 0 0 20px #00b0ff;
+}
+
+#delete strong {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/* Footer Styles */
+#footer {
+    background-color: #1f1f1f;
+    padding: 30px;
+    text-align: center;
+    color: #b2b2b2;
+    font-size: 1rem;
+    border-top: 2px solid #00b0ff;
+}
+
+#footer a {
+    color: #00b0ff;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #00b0ff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    #delete {
+        padding: 20px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
+
+    #delete h2 {
+        font-size: 1.5rem;
+    }
+}
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: #00b0ff;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #0080cc;
+    text-shadow: 0 0 5px #00b0ff, 0 0 10px #00b0ff;
+}
+
+/*edit-user*/
+/*edit-user*/
+/*edit-user*/
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        /* Body */
+        body {
+            background-color: #121212; /* Dark background */
+            color: #f2f2f2;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        /* Container */
+        #container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header and Navigation */
+        header, #nav {
+            background-color: #0d0d0d;
+            padding: 10px;
+            color: #00b0ff; /* Light blue */
+            text-align: center;
+            border-bottom: 3px solid #00b0ff;
+        }
+        
+        /* Content Section */
+        #content {
+            background-color: #1a1a1a; /* Darker background for the content */
+            padding: 40px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+            text-align: center;
+        }
+        
+        #content h2 {
+            color: #00b0ff; /* Blue text for header */
+            font-size: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+        
+        /* Form Styling */
+        form {
+            display: block;
+            margin-top: 20px;
+            text-align: left;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #333333;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+        }
+        
+        form input[type="text"],
+        form input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #444444;
+            color: #f2f2f2;
+            font-size: 1rem;
+            box-shadow: inset 0 0 5px rgba(0, 176, 255, 0.5);
+        }
+        
+        form input[type="submit"] {
+            background-color: #00b0ff;
+            color: #fff;
+            font-size: 1.1rem;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        form input[type="submit"]:hover {
+            background-color: #0089b2; /* Slightly darker blue on hover */
+        }
+        
+        /* Text Container */
+        .text-container p {
+            color: #b3b3b3; /* Lighter grey text */
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            text-shadow: 0 0 5px #00b0ff, 0 0 10px #00b0ff, 0 0 15px #00b0ff;
+        }
+        
+        /* Footer Styles */
+        #footer {
+            background-color: #1f1f1f;
+            padding: 30px;
+            text-align: center;
+            color: #b2b2b2;
+            font-size: 1rem;
+            border-top: 2px solid #00b0ff;
+        }
+        
+        #footer a {
+            color: #00b0ff;
+            text-decoration: none;
+        }
+        
+        #footer a:hover {
+            color: #ffffff;
+            text-shadow: 0 0 10px #ffffff, 0 0 20px #00b0ff;
+        }
+        
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            #content {
+                padding: 20px;
+            }
+        
+            #content h2 {
+                font-size: 1.5rem;
+            }
+        
+            form {
+                width: 100%;
+                padding: 15px;
+            }
+        
+            form input[type="text"],
+            form input[type="email"] {
+                font-size: 1rem;
+            }
+        
+            form input[type="submit"] {
+                font-size: 1rem;
+            }
+        }
+
+/*footer*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Footer */
+/* Footer */
+/* Footer */
+#footer {
+    background-color: #1f1f1f; /* Dark background */
+    padding: 30px 20px;
+    text-align: center;
+    color: #a9a9a9; /* Light grey color for text */
+    font-size: 1rem;
+    border-top: 2px solid #00b0ff; /* Light blue border for separation */
+    position: relative;
+    z-index: 1;
+}
+
+/* Glowing Footer Text */
+#footer p, #footer a {
+    color: #b3b3b3; /* Light gray text color */
+    text-shadow: 0 0 5px #00b0ff, 0 0 10px #00b0ff, 0 0 20px #00b0ff;
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+#footer a {
+    color: #00b0ff;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #00b0ff;
+}
+
+/* Footer Social Media */
+.footer-social-media {
+    margin-bottom: 20px;
+}
+
+.footer-social-media p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.1rem;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    color: #b3b3b3;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #00b0ff;
+}
+
+.social-links img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+/* Footer Content */
+.footer-content {
+    margin-top: 20px;
+}
+
+.footer-content p {
+    font-size: 1rem;
+    color: #b3b3b3;
+}
+
+.footer-content .back-to-top {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: #00b0ff;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.footer-content .back-to-top:hover {
+    background-color: #0080cc;
+    text-shadow: 0 0 5px #00b0ff, 0 0 10px #00b0ff;
+}
+
+/* Glowing Effect for Footer */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #00b0ff, 0 0 10px #00b0ff, 0 0 15px #00b0ff;
+    }
+    50% {
+        text-shadow: 0 0 10px #00b0ff, 0 0 20px #00b0ff, 0 0 30px #00b0ff;
+    }
+    100% {
+        text-shadow: 0 0 5px #00b0ff, 0 0 10px #00b0ff, 0 0 15px #00b0ff;
+    }
+}
+
+/* Add glow animation to footer */
+#footer p, #footer a {
+    animation: glow 1.5s infinite alternate;
+}
+
+/*header*/
+/*header*/
+/*header*/
+    /* General Header Styles */
+    #header {
+        background-color: #121212; /* Dark background */
+        padding: 40px 0;
+        text-align: center;
+        color: #f2f2f2;
+        border-bottom: 3px solid #00b0ff; /* Glowing blue border */
+      }
+  
+      .header-typewriter h1 {
+        font-size: 3rem;
+        color: #00b0ff; /* Neon blue text */
+        font-family: 'Courier New', Courier, monospace; /* Typewriter font */
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        animation: typewriter 4s steps(40) 1 normal both; /* Updated duration and steps */
+        overflow: hidden; /* Hide the text that overflows during animation */
+        white-space: nowrap; /* Prevent line breaks */
+        width: 0; /* Start with no width */
+      }
+  
+      /* Typewriter Animation */
+      @keyframes typewriter {
+        0% {
+          width: 0;
+        }
+        100% {
+          width: 100%; /* Fill the full width of the container */
+        }
+      }
+  
+      /* Optional Glowing Effect */
+      .header-typewriter h1 {
+        text-shadow: 0 0 8px #00b0ff, 0 0 10px #00b0ff, 0 0 20px #00b0ff;
+      }
+/*index*/
+/*index*/
+/*index*/
+		/* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        /* Body */
+        body {
+            background-color: #121212; /* Dark background */
+            color: #f2f2f2;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        /* Container */
+        #container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header and Navigation */
+        header, #nav {
+            background-color: #0d0d0d;
+            padding: 10px;
+            color: #00b0ff; /* Light blue */
+            text-align: center;
+            border-bottom: 3px solid #00b0ff;
+        }
+        
+        /* Content Section */
+        #content {
+            background-color: #1a1a1a; /* Darker background for the content */
+            padding: 40px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+            text-align: center;
+        }
+        
+        #content h2 {
+            color: #00b0ff; /* Blue text for header */
+            font-size: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+        
+        /* Text Container */
+        .text-container p {
+            color: #b3b3b3; /* Lighter grey text */
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            text-shadow: 0 0 5px #00b0ff, 0 0 10px #00b0ff, 0 0 15px #00b0ff;
+        }
+        
+        /* Glowing Effect on Text */
+        .text-container p strong {
+            color: #fff;
+            font-size: 1.2rem;
+            text-shadow: 0 0 5px #00b0ff, 0 0 10px #00b0ff;
+        }
+        
+        /* Footer Styles */
+        #footer {
+            background-color: #1f1f1f;
+            padding: 30px;
+            text-align: center;
+            color: #b2b2b2;
+            font-size: 1rem;
+            border-top: 2px solid #00b0ff;
+        }
+        
+        #footer a {
+            color: #00b0ff;
+            text-decoration: none;
+        }
+        
+        #footer a:hover {
+            color: #ffffff;
+            text-shadow: 0 0 10px #ffffff, 0 0 20px #00b0ff;
+        }
+        
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            #content {
+                padding: 20px;
+            }
+        
+            #content h2 {
+                font-size: 1.5rem;
+            }
+        
+            .text-container p {
+                font-size: 1rem;
+            }
+        }
+/*login*/
+/*login*/
+/*login*/
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a1a; /* Dark background for the page */
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+
+        .label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            border-radius: 6px;
+            border: 1px solid #555;
+            background-color: #333;
+            color: #fff;
+            transition: all 0.3s ease;
+        }
+
+        input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+            border-color: #2e86c1; /* Accent color for focused inputs */
+            outline: none;
+            background-color: #444;
+        }
+
+        input[type="submit"] {
+            background-color: #2e86c1; /* Accent color for submit button */
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #f9e79f; /* Hover color for submit button */
+        }
+
+        .error {
+            color: #e74c3c;
+        }
+
+        .text-container {
+            background-color: #2c3e50; /* Dark background for content */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Mobile responsiveness */
+        @media screen and (max-width: 600px) {
+            #container {
+                width: 100%;
+                padding: 10px;
+            }
+
+            input[type="submit"] {
+                width: 100%;
+            }
+        }
+/*member-inv*/
+/*member-inv*/
+/*member-inv*/
+		/* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        /* Body */
+        body {
+            background-color: #121212; /* Dark background */
+            color: #f2f2f2;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        /* Container */
+        #container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header and Navigation */
+        header, #nav {
+            background-color: #0d0d0d;
+            padding: 10px;
+            color: #00b0ff; /* Light blue */
+            text-align: center;
+            border-bottom: 3px solid #00b0ff;
+        }
+        
+        /* Content Section */
+        #content {
+            background-color: #1a1a1a; /* Darker background for the content */
+            padding: 40px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+            text-align: center;
+        }
+        
+        #content h2 {
+            color: #00b0ff; /* Blue text for header */
+            font-size: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+        
+        /* Text Container */
+        /* Text Container */
+        .inv-cn h1 {
+            color: #b3b3b3; /* Lighter grey text */
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            text-shadow: 0 0 5px #00b0ff, 0 0 10px #00b0ff, 0 0 15px #00b0ff;
+        }
+        
+        .inv-cn p {
+            color: #b3b3b3; /* Lighter grey text */
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            text-shadow: 0 0 5px #00b0ff, 0 0 10px #00b0ff, 0 0 15px #00b0ff;
+        }
+        
+        /* Glowing Effect on Text */
+        .inv-cn p strong {
+            color: #fff;
+            font-size: 1.2rem;
+            text-shadow: 0 0 5px #00b0ff, 0 0 10px #00b0ff;
+        }
+        
+        /* Footer Styles */
+        #footer {
+            background-color: #1f1f1f;
+            padding: 30px;
+            text-align: center;
+            color: #b2b2b2;
+            font-size: 1rem;
+            border-top: 2px solid #00b0ff;
+        }
+        
+        #footer a {
+            color: #00b0ff;
+            text-decoration: none;
+        }
+        
+        #footer a:hover {
+            color: #ffffff;
+            text-shadow: 0 0 10px #ffffff, 0 0 20px #00b0ff;
+        }
+        
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            #content {
+                padding: 20px;
+            }
+        
+            #content h2 {
+                font-size: 1.5rem;
+            }
+        
+            .text-container p {
+                font-size: 1rem;
+            }
+        }
+/*member-nav*/
+/*member-nav*/
+/*member-nav*/
+    /* Reset the list styles */
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center; /* Centers the nav horizontally */
+        align-items: center; /* Centers the nav vertically */
+        background-color: #1a1a1a; /* Dark background */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        border-radius: 8px; /* Rounded corners */
+      }
+  
+      /* Style each list item */
+      li {
+        padding: 0;
+      }
+  
+      /* Style the links */
+      li a {
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        font-size: 1rem;
+        font-family: 'Arial', sans-serif;
+        transition: all 0.3s ease; /* Smooth transition for hover effect */
+        border-radius: 6px;
+      }
+  
+      /* Hover effect: Brighten and add subtle glow */
+      li a:hover {
+        background-color: #00b0ff; /* Accent color */
+        color: #fff; /* White text */
+        box-shadow: 0 0 8px rgba(241, 123, 98, 0.8); /* Glowing effect */
+        transform: scale(1.05); /* Slight grow effect */
+      }
+  
+      /* Active link styling (optional) */
+      li a:active {
+        background-color: #f2f2f2; /* Slightly darker when active */
+        box-shadow: 0 0 8px rgba(211, 84, 0, 0.8);
+      }
+  
+      /* Mobile responsiveness - change to vertical layout when screen width is 600px or less */
+      @media screen and (max-width: 600px) {
+        ul {
+          flex-direction: column; /* Stack items vertically */
+          margin-top: 20px;
+        }
+  
+        li a {
+          padding: 12px 16px; /* Adjust padding for smaller screens */
+        }
+      }
+/*member-page*/
+/*member-page*/
+/*member-page*/
+		/* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        /* Body */
+        body {
+            background-color: #121212; /* Dark background */
+            color: #f2f2f2;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        /* Container */
+        #container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header and Navigation */
+        header, #nav {
+            background-color: #0d0d0d;
+            padding: 10px;
+            color: #00b0ff; /* Light blue */
+            text-align: center;
+            border-bottom: 3px solid #00b0ff;
+        }
+        
+        /* Content Section */
+        #content {
+            background-color: #1a1a1a; /* Darker background for the content */
+            padding: 40px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+            text-align: center;
+        }
+        
+        #content h2 {
+            color: #00b0ff; /* Blue text for header */
+            font-size: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+        
+        /* Text Container */
+        /* Text Container */
+        .memp-cn h1 {
+            color: #b3b3b3; /* Lighter grey text */
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            text-shadow: 0 0 5px #00b0ff, 0 0 10px #00b0ff, 0 0 15px #00b0ff;
+        }
+        
+        .memp-cn p {
+            color: #b3b3b3; /* Lighter grey text */
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            text-shadow: 0 0 5px #00b0ff, 0 0 10px #00b0ff, 0 0 15px #00b0ff;
+        }
+        
+        /* Glowing Effect on Text */
+        .memp-cn p strong {
+            color: #fff;
+            font-size: 1.2rem;
+            text-shadow: 0 0 5px #00b0ff, 0 0 10px #00b0ff;
+        }
+        
+        /* Footer Styles */
+        #footer {
+            background-color: #1f1f1f;
+            padding: 30px;
+            text-align: center;
+            color: #b2b2b2;
+            font-size: 1rem;
+            border-top: 2px solid #00b0ff;
+        }
+        
+        #footer a {
+            color: #00b0ff;
+            text-decoration: none;
+        }
+        
+        #footer a:hover {
+            color: #ffffff;
+            text-shadow: 0 0 10px #ffffff, 0 0 20px #00b0ff;
+        }
+        
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            #content {
+                padding: 20px;
+            }
+        
+            #content h2 {
+                font-size: 1.5rem;
+            }
+        
+            .text-container p {
+                font-size: 1rem;
+            }
+        }
+
+/*member-shop*/
+/*member-shop*/
+/*member-shop*/
+		/* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        /* Body */
+        body {
+            background-color: #121212; /* Dark background */
+            color: #f2f2f2;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        /* Container */
+        #container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header and Navigation */
+        header, #nav {
+            background-color: #0d0d0d;
+            padding: 10px;
+            color: #00b0ff; /* Light blue */
+            text-align: center;
+            border-bottom: 3px solid #00b0ff;
+        }
+        
+        /* Content Section */
+        #content {
+            background-color: #1a1a1a; /* Darker background for the content */
+            padding: 40px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+            text-align: center;
+        }
+        
+        #content h2 {
+            color: #00b0ff; /* Blue text for header */
+            font-size: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+        
+        /* Text Container */
+        /* Text Container */
+        .shop-cn h1 {
+            color: #b3b3b3; /* Lighter grey text */
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            text-shadow: 0 0 5px #00b0ff, 0 0 10px #00b0ff, 0 0 15px #00b0ff;
+        }
+        
+        .shop-cn p {
+            color: #b3b3b3; /* Lighter grey text */
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            text-shadow: 0 0 5px #00b0ff, 0 0 10px #00b0ff, 0 0 15px #00b0ff;
+        }
+        
+        /* Glowing Effect on Text */
+        .shop-cn p strong {
+            color: #fff;
+            font-size: 1.2rem;
+            text-shadow: 0 0 5px #00b0ff, 0 0 10px #00b0ff;
+        }
+        
+        /* Footer Styles */
+        #footer {
+            background-color: #1f1f1f;
+            padding: 30px;
+            text-align: center;
+            color: #b2b2b2;
+            font-size: 1rem;
+            border-top: 2px solid #00b0ff;
+        }
+        
+        #footer a {
+            color: #00b0ff;
+            text-decoration: none;
+        }
+        
+        #footer a:hover {
+            color: #ffffff;
+            text-shadow: 0 0 10px #ffffff, 0 0 20px #00b0ff;
+        }
+        
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            #content {
+                padding: 20px;
+            }
+        
+            #content h2 {
+                font-size: 1.5rem;
+            }
+        
+            .text-container p {
+                font-size: 1rem;
+            }
+        }
+        
+/*nav*/
+/*nav*/
+/*nav*/
+    /* Reset the list styles */
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center; /* Centers the nav horizontally */
+        align-items: center; /* Centers the nav vertically */
+        background-color: #1a1a1a; /* Dark background */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        border-radius: 8px; /* Rounded corners */
+      }
+  
+      /* Style each list item */
+      li {
+        padding: 0;
+      }
+  
+      /* Style the links */
+      li a {
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        font-size: 1rem;
+        font-family: 'Arial', sans-serif;
+        transition: all 0.3s ease; /* Smooth transition for hover effect */
+        border-radius: 6px;
+      }
+  
+      /* Hover effect: Brighten and add subtle glow */
+      li a:hover {
+        background-color: #00b0ff; /* Accent color */
+        color: #fff; /* White text */
+        box-shadow: 0 0 8px rgba(241, 123, 98, 0.8); /* Glowing effect */
+        transform: scale(1.05); /* Slight grow effect */
+      }
+  
+      /* Active link styling (optional) */
+      li a:active {
+        background-color: #f2f2f2; /* Slightly darker when active */
+        box-shadow: 0 0 8px rgba(211, 84, 0, 0.8);
+      }
+  
+      /* Mobile responsiveness - change to vertical layout when screen width is 600px or less */
+      @media screen and (max-width: 600px) {
+        ul {
+          flex-direction: column; /* Stack items vertically */
+          margin-top: 20px;
+        }
+  
+        li a {
+          padding: 12px 16px; /* Adjust padding for smaller screens */
+        }
+      }
+/*register-page*/
+/*register-page*/
+/*register-page*/
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a1a; /* Dark background for the page */
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+
+        .label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            border-radius: 6px;
+            border: 1px solid #555;
+            background-color: #333;
+            color: #fff;
+            transition: all 0.3s ease;
+        }
+
+        input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+            border-color: #2e86c1; /* Accent color for focused inputs */
+            outline: none;
+            background-color: #444;
+        }
+
+        input[type="submit"] {
+            background-color: #2e86c1; /* Accent color for submit button */
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #f9e79f; /* Hover color for submit button */
+        }
+
+        .error {
+            color: #e74c3c;
+        }
+
+        .text-container {
+            background-color: #2c3e50; /* Dark background for content */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Mobile responsiveness */
+        @media screen and (max-width: 600px) {
+            #container {
+                width: 100%;
+                padding: 10px;
+            }
+
+            input[type="submit"] {
+                width: 100%;
+            }
+        }
+/*register-view-users*/
+/*register-view-users*/
+/*register-view-users*/
+   /* Global Styles */
+   body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a; /* Dark background for the page */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #2c3e50;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 2px solid #555;
+}
+
+th {
+    background-color: #34495e;
+    color: #fff;
+}
+
+td {
+    background-color: #333;
+}
+
+tr:nth-child(even) td {
+    background-color: #444;
+}
+
+.delete-btn, .edit-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 5px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+.edit-btn {
+    background-color: #f17b62;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #e67e22;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 600px) {
+    table {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+}
+/*member*/
+
+
